@@ -5,7 +5,7 @@
 if SHIELD_SKELETYL_RGB_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Skeletyl RGB"
+	default "Skeletyl RGB L"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
@@ -15,7 +15,7 @@ endif
 if SHIELD_SKELETYL_RGB_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Skeletyl RGB Right"
+	default "Skeletyl RGB R"
 
 endif
 
