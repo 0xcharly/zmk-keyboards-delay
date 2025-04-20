@@ -1,11 +1,30 @@
-# ZMK Module Template
+# Personal ZMK Module
 
-This repository contains a template for a ZMK module, as it would most frequently be used. 
+This repository contains the shield files for the keyboard that I'm using.
 
 ## Usage
 
-Read through the [ZMK Module Creation](https://zmk.dev/docs/development/module-creation) page for details on how to configure this template.
+Edit your west.yml file found in your zmk-config's config directory to add the
+`0xcharly` module. Example:
 
-## More Info
+```
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: 0xcharly
+      url-base: https://github.com/0xcharly
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-keyboards-delay
+      remote: 0xcharly
+      revision: main
+  self:
+    path: config
+```
 
-For more info on modules, you can read through  through the [Zephyr modules page](https://docs.zephyrproject.org/3.5.0/develop/modules.html) and [ZMK's page on using modules](https://zmk.dev/docs/features/modules). [Zephyr's west manifest page](https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#west-manifests) may also be of use.
+Once you have the module added to your west.yml you can then build firmware as
+if it was in your config's shield directory or in ZMK main.
