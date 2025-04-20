@@ -1,0 +1,27 @@
+# Copyright (c) 2022 ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+
+if SHIELD_SKELETYL_RGB_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Skeletyl RGB"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_SKELETYL_RGB_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Skeletyl RGB Right"
+
+endif
+
+if SHIELD_SKELETYL_RGB_LEFT || SHIELD_SKELETYL_RGB_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
