@@ -1,5 +1,5 @@
 file_format: "1"
-id: cygnus
+id: cygnus_studio
 name: Cygnus
 type: shield
 url: https://github.com/0xcharly/zmk-keyboards-delay
