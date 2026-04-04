@@ -9,5 +9,5 @@ exposes:
 features:
   - keys
 siblings:
-  - cygnus_left
-  - cygnus_right
+  - cygnus_studio_left
+  - cygnus_studio_right

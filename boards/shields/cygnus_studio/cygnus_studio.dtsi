@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "cygnus-layouts.dtsi"
+#include "cygnus_studio-layouts.dtsi"
 
 #include <dt-bindings/zmk/matrix_transform.h>
 

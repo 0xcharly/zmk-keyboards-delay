@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_CYGNUS_DONGLE
-  def_bool $(shields_list_contains,cygnus_dongle)
+  def_bool $(shields_list_contains,cygnus_studio_dongle)
 
 config SHIELD_CYGNUS_LEFT
-	def_bool $(shields_list_contains,cygnus_left)
+	def_bool $(shields_list_contains,cygnus_studio_left)
 
 config SHIELD_CYGNUS_RIGHT
-	def_bool $(shields_list_contains,cygnus_right)
+	def_bool $(shields_list_contains,cygnus_studio_right)
