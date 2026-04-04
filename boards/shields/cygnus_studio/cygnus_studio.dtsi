@@ -6,8 +6,6 @@
 
 #include "cygnus_studio-layouts.dtsi"
 
-#include <dt-bindings/zmk/matrix_transform.h>
-
 / {
     chosen {
         zmk,kscan = &default_kscan;
