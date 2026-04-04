@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) 2026 Charly Delay
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "cygnus.dtsi"
+#include "cygnus-layouts.dtsi"
+
+#include <dt-bindings/zmk/matrix_transform.h>
+
+// https://zmk.dev/docs/development/hardware-integration/dongle?studio-ready=studio
+
+&physical_layout0 {
+    transform = <&default_transform>;
+};
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
