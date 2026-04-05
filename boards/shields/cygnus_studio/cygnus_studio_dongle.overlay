@@ -5,16 +5,10 @@
  */
 
 #include "cygnus_studio.dtsi"
-#include "cygnus_studio-layouts.dtsi"
-
-#include <dt-bindings/zmk/matrix_transform.h>
-
-// https://zmk.dev/docs/development/hardware-integration/dongle?studio-ready=studio
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &cygnus_layout;
     };
 
     mock_kscan: mock_kscan_0 {
